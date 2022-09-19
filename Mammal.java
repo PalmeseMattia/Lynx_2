@@ -5,7 +5,7 @@ class Mammal extends Animal{
     private int gestation;
 
 
-    public Mammal(String name, String colors, String predators, String diet, int weigth, int legs, int childs, int gestation) {
+    Mammal(String name, String colors, String predators, String diet, int weigth, int legs, int childs, int gestation) {
         super(name, colors, predators, diet, weigth,legs);
         this.childs = childs;
         this.gestation = gestation;
