@@ -13,8 +13,20 @@ class Animal {
         this.colors = colors;
         this.predators = predators;
         this.diet = diet;
-        this.weigth = weigth;
-        this.legs = legs;
+        
+        if (weigth <= 0){
+            throw new ArithmeticException("Il peso non può essere minore o uguale a zero");
+        }
+        else{
+            this.weigth = weigth;
+        }
+
+        if (legs < 0){
+            throw new ArithmeticException("Le zampe non possono essere minori di zero");
+        }
+        else{
+            this.legs = legs;
+        }
     }
 
 
