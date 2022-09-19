@@ -8,12 +8,12 @@ class Animal {
     private int weigth;
     private int legs;
 
-    Animal(String name, String colors, String predators, String diet, int weigth, int legs) {
+    public Animal(String name, String colors, String predators, String diet, int weigth, int legs) {
         this.name = name;
         this.colors = colors;
         this.predators = predators;
         this.diet = diet;
-        
+
         if (weigth <= 0){
             throw new ArithmeticException("Il peso non può essere minore o uguale a zero");
         }
